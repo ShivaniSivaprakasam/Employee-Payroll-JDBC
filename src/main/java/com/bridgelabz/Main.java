@@ -68,6 +68,19 @@ public class Main {
 
             stats.forEach(System.out::println);
 
+            // UC7 – Adding New Employee
+
+            System.out.println("\n===== ADD NEW EMPLOYEE =====");
+
+            EmployeePayroll newEmployee =
+                    service.addEmployeeToPayroll(
+                            "David",
+                            2800000.00,
+                            LocalDate.now(),
+                            "M");
+
+            System.out.println("Added:");
+            System.out.println(newEmployee);
 
         } catch (PayrollException e) {
             System.out.println("Error: " + e.getMessage());
