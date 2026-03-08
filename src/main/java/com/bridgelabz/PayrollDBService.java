@@ -9,8 +9,8 @@ public class PayrollDBService {
 
     private static final String URL =
             "jdbc:mysql://localhost:3306/payroll_services";
-    private static final String USER = "root";
-    private static final String PASSWORD = "Maha@1234";
+    private static final String USER = "shivani";
+    private static final String PASSWORD = "root";
 
     public List<EmployeePayroll> readEmployeePayrollData() throws PayrollException {
 
